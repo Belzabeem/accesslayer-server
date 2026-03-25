@@ -1,5 +1,12 @@
 {
    "name": "accesslayer-server",
+   "version": "0.1.0",
+   "description": "Backend API for Access Layer, the off-chain server for a Stellar-native creator keys marketplace.",
+   "license": "MIT",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/accesslayerorg/accesslayer-server.git"
+   },
    "packageManager": "pnpm@10.6.5",
    "scripts": {
       "preinstall": "node -e \"const ua = process.env.npm_config_user_agent || ''; if (!ua.includes('pnpm')) { console.error('Use pnpm for this repository. Run: pnpm install'); process.exit(1); }\"",
