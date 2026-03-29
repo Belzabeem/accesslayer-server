@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { creatorListSortDirectionQueryParam } from './creators.sort-direction.parse';
+import { creatorListIncludeQueryParam } from './creators.include.parse';
 import { withCreatorListQueryStringNormalization } from './creators.query-string.utils';
 import { safeIntParam } from '../../utils/query.utils';
 import {
@@ -41,6 +42,7 @@ export const CreatorListQuerySchema = z.object({
       z.enum(CREATOR_LIST_SORT_FIELDS).optional().default(DEFAULT_CREATOR_LIST_SORT)
    ),
    order: creatorListSortDirectionQueryParam(),
+   include: creatorListIncludeQueryParam(),
 
    // Filters
    verified: withCreatorListQueryStringNormalization(
