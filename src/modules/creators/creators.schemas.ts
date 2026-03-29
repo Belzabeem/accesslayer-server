@@ -1,10 +1,10 @@
+// src/modules/creators/creators.schemas.ts
 import { z } from 'zod';
 import { creatorListSortDirectionQueryParam } from './creators.sort-direction.parse';
 import { creatorListIncludeQueryParam } from './creators.include.parse';
 import { withCreatorListQueryStringNormalization } from './creators.query-string.utils';
 import { safeIntParam } from '../../utils/query.utils';
 import {
-   DEFAULT_OFFSET,
    MIN_PAGE_SIZE,
    MAX_PAGE_SIZE,
 } from '../../constants/pagination.constants';
