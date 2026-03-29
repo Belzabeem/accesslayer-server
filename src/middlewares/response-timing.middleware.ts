@@ -11,7 +11,7 @@ import { envConfig } from '../config';
  * Can be enabled/disabled via the `ENABLE_RESPONSE_TIMING` environment variable.
  */
 export const responseTimingMiddleware = (
-   req: Request,
+   _req: Request,
    res: Response,
    next: NextFunction
 ): void => {

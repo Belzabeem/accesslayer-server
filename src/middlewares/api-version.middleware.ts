@@ -10,7 +10,7 @@ import { envConfig } from '../config';
  * Can be enabled/disabled via the `ENABLE_API_VERSION_HEADER` environment variable.
  */
 export const apiVersionMiddleware = (
-   req: Request,
+   _req: Request,
    res: Response,
    next: NextFunction
 ): void => {
